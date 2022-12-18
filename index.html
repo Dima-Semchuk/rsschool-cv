@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto:wght@400;500;700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="main">
+  <section class="section-about">
+    <img class="setion-about__image" src="assets/img/photo.jpg" alt="header photo">
+    <h1 class="setion-about__name">Dima Semchuk</h1>
+    <h4 class="setion-about__surname">Junior Frontend Developer</h4>
+
+    <h3 class="section-title">Contancts</h3>
+    <div class="underline"></div>
+    <ul class="contacts">
+      <li class="contacts__item">
+        <img class="contacts__img-phone" src="assets/svg/phone.svg" alt="phone icon">
+        <a class="contacts__phone" href="tel:+38067-179-77-29">+38067-179-77-29</a>
+      </li>
+      <li class="contacts__item">
+        <img class="contacts__img-telegram" src="assets/svg/telegram.svg" alt="telegram icon">
+        <a class="contacts__telegram" href="https://t.me/semchukdima" target="_blank">@semchukdima</a>
+      </li>
+      <li class="contacts__item">
+        <img class="contacts__img-mail" src="assets/svg/mail.svg" alt="mail icon">
+        <a class="contacts__mail" href="mailto:semchukdima@gmail.com">semchukdima@gmail.com</a>
+      </li>
+    </ul>
+
+    <h3 class="section-title">Skills</h3>
+    <div class="underline"></div>
+    <ul class="skills">
+      <li class="skills__item skills__image-html">HTML, CSS</li>
+      <li class="skills__item skills__image-sass">Sass</li>
+      <li class="skills__item skills__image-gulp">Gulp</li>
+      <li class="skills__item skills__image-javascript">JavaScript</li>
+      <li class="skills__item skills__image-github">GitHub</li>
+    </ul>
+
+    <h3 class="section-title">Languages</h3>
+    <div class="underline"></div>
+    <h4 class="languages__kind">English</h4>
+    <ul class="languages">
+      <li class="languages__item">Intermediate</li>
+    </ul>
+    <h4 class="languages__kind">Ukrainian</h4>
+    <ul class="languages">
+      <li class="languages__item">Native</li>
+    </ul>
+    <h4 class="languages__kind">Russia</h4>
+    <ul class="languages">
+      <li class="languages__item">Native</li>
+    </ul>
+  </section>
+
+  <section class="section-info">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">about</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#skills">skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projects">projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#skills">skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about">
+      <h3 class="section-title">About me</h3>
+      <div class="underline"></div>
+      <p class="about__me">
+        I am a Front-end developer based in Kyev, the Ukraine
+        I am looking forward to working in teams as well as individually. 
+        I am not only willing to deepen my knowledge but I also want to apply 
+        them to the real products.
+      </p>
+    </div>
+
+    <div class="education">
+      <h3 class="section-title">Education</h3>
+      <div class="underline"></div>
+      <h4 class="education__place">
+        Kyiv National University of ConstructionAnd Architecture
+      </h4>
+      <ul class="education__list">
+        <li class="education__item">
+          Post Graduated in Heat and Gas Supply
+        </li>
+        <li class="education__item">
+          Gained extensive training and practice
+        </li>
+      </ul>
+    </div>
+
+    <div class="courses">
+      <h3 class="section-title">Courses</h3>
+      <div class="underline"></div>
+      <h4 class="courses__place">
+        Specialized courses with a mentor in video format
+      </h4>
+      <ul class="courses__list">
+        <li class="education__item">
+          HTML and CSS
+        </li>
+        <li class="education__item">
+          Gulp and Sass
+        </li>
+        <li class="education__item">
+          jQuery
+        </li>
+        <li class="education__item">
+          WordPress
+        </li>
+      </ul>
+      <h4 class="courses__place">
+        RS Schools
+      </h4>
+      <ul class="courses__list">
+        <li class="education__item">
+          JavaScript
+        </li>
+      </ul>
+    </div>
+
+    <div class="code">
+      <h3 class="section-title">Code example</h3>
+      <div class="underline"></div>
+      <pre class="code__example">
+        <code class="example-slider">
+          $(function(){
+            $('.slider-blog__list').slick({
+              dots: true,
+              arrows: false
+            });
+          });
+        </code>
+      </pre>
+    </div>
+
+    <footer class="footer">
+      <a class="footer__github-link" href="https://github.com/Dima-Semchuk" target="_blank">
+        <img class="footer__img-github" src="assets/svg/github.svg" alt="my github">
+      </a>
+      <p class="gooter__year">2022</p>
+      <a class="footer__school-link" href="https://rs.school/js/" target="_blank">
+        <img class="footer__img-school" src="assets/svg/rs_school_js.svg" alt="my school">
+      </a>
+    </footer>
+  </section>
+</main>
+
+</body>
+</html>
