@@ -118,6 +118,10 @@ background-color: #808080;
   margin-right: 10px;
 }
 
+.contacts__item {
+  overflow-wrap: break-word;
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -213,10 +217,14 @@ background-color: #808080;
   padding-left: 30px;
 }
 
-.code__example {
+.code__example, .projects__example {
   background-color: #f1e8d5;
   box-shadow: 5px 5px 10px black;
   border-radius: 20px;
+  white-space: pre-wrap; /* Перенос строк внутри pre */
+  word-wrap: break-word; /* Перенос длинных слов */
+  max-width: 100%; /* Ограничение ширины до размеров контейнера */
+  overflow: auto; /* Добавление прокрутки для длинного текста */
 }
 
 .footer {
