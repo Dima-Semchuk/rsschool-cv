@@ -217,6 +217,10 @@ background-color: #808080;
   padding-left: 30px;
 }
 
+.projects {
+  margin-bottom: 40px;
+}
+
 .code__example, .projects__example {
   background-color: #f1e8d5;
   box-shadow: 5px 5px 10px black;
