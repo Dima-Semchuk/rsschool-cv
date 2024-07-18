@@ -120,7 +120,8 @@ background-color: #808080;
 }
 
 .contacts__item, .setion-about__name,
-.setion-about__surname, .section-title {
+.setion-about__surname, .section-title,
+.skills, .languages {
   overflow-wrap: break-word;
 }
 
@@ -246,7 +247,6 @@ background-color: #808080;
 }
 
 
-/* Медиазапросы для экранов шириной 768px и меньше */
 @media (max-width: 768px) {
   .menu {
     flex-wrap: wrap;
@@ -259,3 +259,27 @@ background-color: #808080;
     margin-right: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .skills__item {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    min-height: 30px;
+    position: relative;
+  }
+
+  .skills__image-html::before, .skills__image-sass::before,
+  .skills__image-gulp::before, .skills__image-javascript::before,
+  .skills__image-github::before {
+    left: -26px;
+  }
+
+  .education ul, .courses ul, .languages {
+    padding-left: 20px;
+}
+}
+
+
+
+
+
