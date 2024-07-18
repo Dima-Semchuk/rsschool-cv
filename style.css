@@ -40,6 +40,7 @@ list-style: none;
 img {
 max-width: 100%;
 display: block;
+max-width: 100%;
 }
 
 input,
@@ -100,8 +101,8 @@ background-color: #808080;
 .setion-about__image {
   margin: 0 auto 15px;
   border-radius: 50%;
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px;
+  height: auto;
 }
 
 .setion-about__name {
@@ -118,7 +119,8 @@ background-color: #808080;
   margin-right: 10px;
 }
 
-.contacts__item {
+.contacts__item, .setion-about__name,
+.setion-about__surname, .section-title {
   overflow-wrap: break-word;
 }
 
@@ -241,4 +243,19 @@ background-color: #808080;
 .footer__img-github {
   width: 45px;
   height: 45px;
+}
+
+
+/* Медиазапросы для экранов шириной 768px и меньше */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
